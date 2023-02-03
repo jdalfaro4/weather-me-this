@@ -1,0 +1,14 @@
+
+
+nav {
+    background:linear-gradient(to right, rgb(38, 98, 239),  rgb(4, 7, 146));
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#weatherNav {
+    padding: 13px;
+    padding-left: 400px;
+}
