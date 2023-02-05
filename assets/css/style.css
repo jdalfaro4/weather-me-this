@@ -18,3 +18,23 @@ nav {
     margin-left: 6px;
     font-size: 30px;
 }
+
+#searchHistory {
+    margin-left: 6px;
+}
+
+#search_city {
+    margin-left: 6px;
+    width: 300px;
+    height: 45px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#search {
+    margin: 6px;
+    width: 300px;
+    height: 32px;
+    background-color:rgb(87, 169, 236);
+    border-radius: 5px 5px 5px 5px;
+    border-style: none;
+}
