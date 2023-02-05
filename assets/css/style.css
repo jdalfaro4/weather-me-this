@@ -6,9 +6,15 @@ nav {
     text-align: center;
     font-size: 30px;
     color: white;
+    margin: 6px;
 }
 
 #weatherNav {
     padding: 13px;
     padding-left: 400px;
+}
+
+#searchforCity {
+    margin-left: 6px;
+    font-size: 30px;
 }
