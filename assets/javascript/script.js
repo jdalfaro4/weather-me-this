@@ -14,17 +14,21 @@ function searchweatherdata(city) {
         console.log(data)
 
         let cityNameEl = document.createElement('p')
-        cityNameEl.innerHTML = data.name;
+        cityNameEl.innerHTML = data.name + (new Date());
         let temperatureDiv = document.createElement('div');
         temperatureDiv.append(data.main.temp)
         let humidityDiv = document.createElement('div');
         humidityDiv.append(data.main.humidity)
         let windspeedDiv = document.createElement('div');
         windspeedDiv.append(data.wind.speed)
+
         console.log(parentDiv)
 
         parentDiv.append(cityNameEl, temperatureDiv, humidityDiv, windspeedDiv)
         currentweatherEl.append(parentDiv)
+        parentDiv.style.border = '1px solid black'
+        parentDiv.style.margin = '10px'
+        parentDiv.style.padding = '15px'
 
         searchforcachedData(data.name)
     })
@@ -44,21 +48,27 @@ function searchforcachedData(city){
          for(i = 0; i < dataList.length; i+=8) {
         let parentDiv = document.createElement('div')
         parentDiv.style.border = '1px solid black'
-        parentDiv.style.margin = '15px'
+        parentDiv.style.margin = '10px'
+        parentDiv.style.padding = '15px'
+        parentDiv.style.backgroundColor = 'black'
+        parentDiv.style.color = 'white'
+        parentDiv.style.width = '200px'
+    
 
         let temperatureDiv = document.createElement('div');
         temperatureDiv.append(dataList[i].main.temp)
+        let dateTextDiv = document.createElement('div');
+        dateTextDiv.append(dataList[i].dt_txt)
         let humidityDiv = document.createElement('div');
         humidityDiv.append(dataList[i].main.humidity)
         let windspeedDiv = document.createElement('div');
         windspeedDiv.append(dataList[i].wind.speed)
 
-        parentDiv.append(temperatureDiv, humidityDiv, windspeedDiv)
+        parentDiv.append(dateTextDiv, temperatureDiv, humidityDiv, windspeedDiv)
         forecastParent.append(parentDiv)
     
     }
     forecastweatherEl.append(forecastParent)
-
     })
 
 }

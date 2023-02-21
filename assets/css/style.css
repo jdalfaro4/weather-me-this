@@ -28,6 +28,7 @@ nav {
     width: 300px;
     height: 45px;
     border-radius: 5px 5px 5px 5px;
+    
 }
 
 #search {
@@ -37,4 +38,14 @@ nav {
     background-color:rgb(87, 169, 236);
     border-radius: 5px 5px 5px 5px;
     border-style: none;
+}
+
+#currentWeather {
+    margin-left: 350px;
+    display:flex;
+    
+}
+
+#forecastWeather{
+    margin-left: 350px;
 }
