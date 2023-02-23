@@ -1,6 +1,6 @@
 # weather-me-this
 
-[Here](https://jdalfaro4.github.io/Cutie-Pies/) is the link to the website. 
+[Here](https://jdalfaro4.github.io/weather-me-this/) is the link to the website. 
 
 ## Description
 
